@@ -1,6 +1,6 @@
 # They're a 10 but....
 
-Based off the popular TikTok trend! Demo here: 
+Based off the popular TikTok trend! Demo here: [tenbut.jordantwells.com](tenbut.jordantwells.com)
 
 
 
