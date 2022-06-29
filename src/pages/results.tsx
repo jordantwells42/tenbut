@@ -20,7 +20,7 @@ export default function Results(props: any) {
             <h1 className='text-white text-4xl'>Results</h1>
             {/*calculateDeltas(data).map((datapoint) => {
                 return (
-                    <div key={datapoint.caveat} className='text-white text-2xl'>
+                    <div key={datapoint.caveat} className='text-white text-base'>
                         {datapoint.caveat}: {datapoint.delta}
                     </div>
                 )
