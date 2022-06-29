@@ -16,7 +16,7 @@ export default function Results(props: any) {
         <link rel="icon" href="/favicon.ico" />
         </Head>
         
-        <div className="flex pt-20 h-screen w-full flex-col bg-slate-800 items-center justify-center">
+        <div className="flex pt-20 min-h-screen w-full flex-col bg-slate-800 items-center justify-center">
             <h1 className='text-white text-4xl'>Results</h1>
             {/*calculateDeltas(data).map((datapoint) => {
                 return (
@@ -41,6 +41,7 @@ export default function Results(props: any) {
             <Link href="/">
                 <h1 className="text-white underline text-2xl hover:text-slate-300 hover:cursor-pointer">Back to Judging</h1>
             </Link>
+            <div className='py-10'></div>
         </div>
         </>
     )
