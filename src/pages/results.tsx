@@ -31,7 +31,7 @@ export default function Results(props: any) {
                 let deltaColor = delta > 0 ? 'text-green-500' : 'text-red-500'
                 deltaColor = delta === 0 ? 'text-white' : deltaColor
                 return (
-                    <div key={rating.caveat} className='text-white w-1/2 flex justify-between flex-row text-2xl'>
+                    <div key={rating.caveat} className='text-white w-3/4 flex justify-between flex-row text-2xl'>
                         <h1 className="text-left">but {rating.caveat}: &nbsp;</h1> 
                         <h1 className={deltaColor + " text-right"}>{delta}</h1>
                     </div>
