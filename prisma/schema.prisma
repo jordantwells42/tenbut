@@ -13,14 +13,10 @@ datasource db {
     referentialIntegrity = "prisma"
 }
 
-model Example {
-    id String @id @default(cuid())
-}
-
 model Rating {
     id String @id @default(cuid())
-    caveat String
-    initialRating Int
-    rating Int
-    delta Int
+    caveat String?
+    initialRating Int?
+    rating Int?
+    delta Int?
 }

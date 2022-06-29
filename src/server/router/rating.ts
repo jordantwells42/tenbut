@@ -6,6 +6,7 @@ import { prisma } from "../db/client";
 export const exampleRouter = createRouter()
   .query("get-ratings", {
     async resolve({ ctx }) {
+      // @ts-ignore
       return await ctx.prisma.rating.groupBy({
         by: ["caveat"],
         _avg : {
@@ -22,6 +23,7 @@ export const exampleRouter = createRouter()
       delta: z.number().nullish(),
     }), 
     async resolve({input, ctx}) {
+      // @ts-ignore
       const rating = await ctx.prisma.rating.create({
         data: {
           ...input
