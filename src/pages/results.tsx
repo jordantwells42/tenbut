@@ -33,7 +33,7 @@ export default function Results(props: any) {
                 return (
                     <div key={rating.caveat} className='text-white w-3/4 flex justify-between flex-row text-base'>
                         <h1 className="text-left">but {rating.caveat}: &nbsp;</h1> 
-                        <h1 className={deltaColor + " text-right"}>{delta}</h1>
+                        <h1 className={deltaColor + " text-right"}>{delta.toFixed(3)}</h1>
                     </div>
                 )
             })}
