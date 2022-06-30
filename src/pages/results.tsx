@@ -27,6 +27,9 @@ export default function Results(props: any) {
             }).reverse()*/}
             <div className='py-5'></div>
             {props.ratings.map((rating : any) => {
+                if (rating.caveat === "they're feet smell"){
+                    return <></>
+                }
                 const delta = rating._avg.delta
                 let deltaColor = delta > 0 ? 'text-green-500' : 'text-red-500'
                 deltaColor = delta === 0 ? 'text-white' : deltaColor
