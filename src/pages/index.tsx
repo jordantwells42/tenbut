@@ -92,10 +92,6 @@ const Home: NextPage = () => {
 
         <div className="py-5"></div>
         <Link href="/results"><h3 className="underline text-white text-2xl hover:text-slate-300 hover:cursor-pointer">Results</h3></Link>
-
-
-
-
       </div>
 
     </>
