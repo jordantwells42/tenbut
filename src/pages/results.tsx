@@ -52,7 +52,7 @@ export default function Results(props: any) {
 }
 
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
     // @ts-ignore
     const ratings = await prisma.rating.groupBy({
         by: ["caveat"],
@@ -68,6 +68,6 @@ export const getServerSideProps = async () => {
     })
 
     console.log(ratings)
-    return {props: {ratings: ratings}}
+    return {props: {ratings: ratings}, revalidate: 120}
 
 }
