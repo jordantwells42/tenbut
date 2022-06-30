@@ -29,6 +29,14 @@ const Home: NextPage = () => {
     setRating(newRating);
   }
 
+  function handleRatingHover(newRating: number) {
+    setShowRating(true)
+    if (newRating === undefined) {
+      return
+    }
+    setRating(newRating);
+  }
+
   function getRandomCaveat() {
     const randomIndex = Math.floor(Math.random() * caveatsJSON.length);
     const randcaveat = caveatsJSON[randomIndex];
@@ -71,7 +79,7 @@ const Home: NextPage = () => {
         <h1 className="text-white text-center text-4xl">They&apos;re {rating === 8 ? "an" : "a"} {!showRating ? "..." : rating}</h1>
         <div className="py-5"></div>
         <div className="flex flex-col items-center jutify-center">
-          {<Rating onClick={handleRatingChange} onHover={() => ""} initialRating={rating} start={0} stop={10}/>}
+          {<Rating onClick={handleRatingChange} onHover={handleRatingHover} initialRating={rating} start={0} stop={10}/>}
         </div>
 
         <div className="py-5"></div>
