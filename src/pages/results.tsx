@@ -68,6 +68,6 @@ export const getStaticProps = async () => {
     })
 
     console.log(ratings)
-    return {props: {ratings: ratings}, revalidate: 60*5}
+    return {props: {ratings: ratings}, revalidate: 120}
 
 }
