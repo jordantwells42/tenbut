@@ -16,8 +16,8 @@ export default function Results(props: any) {
         <link rel="icon" href="/favicon.ico" />
         </Head>
         
-        <div className="flex pt-20 min-h-screen w-full flex-col bg-slate-800 items-center justify-center">
-            <h1 className='text-white text-4xl'>Results</h1>
+        <div className="flex pt-20 min-h-screen w-full flex-col bg-stone-800 items-center justify-center">
+            <h1 className='text-pink-300 font-bold text-4xl'>Results</h1>
             {/*calculateDeltas(data).map((datapoint) => {
                 return (
                     <div key={datapoint.caveat} className='text-white text-base'>
@@ -34,7 +34,7 @@ export default function Results(props: any) {
                 let deltaColor = delta > 0 ? 'text-green-500' : 'text-red-500'
                 deltaColor = delta === 0 ? 'text-white' : deltaColor
                 return (
-                    <div key={rating.caveat} className='border px-5 py-2 items-center text-white w-3/4 flex justify-between flex-row text-base'>
+                    <div key={rating.caveat} className='border border-cyan-300 px-5 py-2 items-center text-cyan-100 w-3/4 flex justify-between flex-row text-base'>
                         <h1 className="text-left">but {rating.caveat}: &nbsp;</h1> 
                         <h1 className={deltaColor + " text-right"}>{delta.toFixed(2)}</h1>
                     </div>
@@ -42,7 +42,7 @@ export default function Results(props: any) {
             })}
             <div className='py-5'></div>
             <Link href="/">
-                <h1 className="text-white underline text-2xl hover:text-slate-300 hover:cursor-pointer">Back to Judging</h1>
+                <h1 className="font-bold text-cyan-100 underline text-2xl hover:text-slate-300 hover:cursor-pointer">Back to Judging</h1>
             </Link>
             <div className='py-10'></div>
         </div>

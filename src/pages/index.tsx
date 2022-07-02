@@ -69,14 +69,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex pt-20 h-screen w-full flex-col bg-slate-800 items-center justify-center">
-        <div className="border-4 p-8 w-3/4 rounded-[40px] items-center justify-center">
-          <h1 className="text-white text-center text-4xl">They&apos;re {initialRating === 8 ? "an" : "a"} {initialRating},</h1>
+      <div className="flex pt-20 h-screen w-full flex-col bg-stone-800 items-center justify-center">
+        <div className="border-4 border-cyan-300 rounded-[40px] p-8 w-3/4  items-center justify-center">
+          <h1 className="text-cyan-100 font-bold text-center text-4xl">They&apos;re {initialRating === 8 ? "an" : "a"} {initialRating},</h1>
           <div className="py-3"></div>
-          <h1 className="text-center text-white text-center italic text-4xl">but {caveat}</h1>
+          <h1 className="text-center text-pink-300 font-bold text-center italic text-4xl">but {caveat}</h1>
         </div>
         <div className="py-10"></div>
-        <h1 className="text-white text-center text-4xl">They&apos;re {rating === 8 ? "an" : "a"} {!showRating ? "..." : rating}</h1>
+        <h1 className="text-cyan-100 font-bold text-center text-4xl">They&apos;re {rating === 8 ? "an" : "a"} {!showRating ? "..." : rating}</h1>
         <div className="py-5"></div>
         <div className="flex flex-col items-center jutify-center">
           {<Rating onClick={handleRatingChange} onHover={handleRatingHover} initialRating={rating} start={0} stop={10}/>}
@@ -85,13 +85,13 @@ const Home: NextPage = () => {
         <div className="py-5"></div>
         <div className="flex flex-row gap-5 items-center justify-center">
 
-          <button onClick={handleRefresh} className="border rounded text-white text-2xl p-4">Refresh</button>
-          <button onClick={handleSubmit} className="border rounded text-white text-2xl p-4">Submit</button>
+          <button onClick={handleRefresh} className="border-4 border-cyan-300 font-bold rounded-[40px] text-white text-2xl p-4">Refresh</button>
+          <button onClick={handleSubmit} className="border-4 border-cyan-300 font-bold rounded-[40px] text-white text-2xl p-4">Submit</button>
           
         </div>
 
         <div className="py-5"></div>
-        <Link href="/results"><h3 className="underline text-white text-2xl hover:text-slate-300 hover:cursor-pointer">Results</h3></Link>
+        <Link href="/results"><h3 className="underline font-bold text-cyan-100 text-2xl hover:text-slate-300 hover:cursor-pointer">Results</h3></Link>
       </div>
 
     </>
