@@ -36,7 +36,7 @@ export default function Results(props: any) {
                 return (
                     <div key={rating.caveat} className='border border-cyan-300 px-5 py-2 items-center text-cyan-100 w-3/4 flex justify-between flex-row text-base'>
                         <h1 className="text-left">but {rating.caveat}: &nbsp;</h1> 
-                        <h1 className={deltaColor + " text-right"}>{delta.toFixed(2)}</h1>
+                        <h1 className={deltaColor + " text-right font-bold px-3"}>{delta.toFixed(2)}</h1>
                     </div>
                 )
             })}
